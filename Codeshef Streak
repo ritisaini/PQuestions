@@ -1,0 +1,53 @@
+/* The first line of each test case contains an integer N - The number of days.
+A array, representing the problems solved by Om on the ith day.
+B array, representing the problems solved by Addy on the ith day.
+Output -:
+OM, if Om has longer maximum streak than Addy;
+ADDY, if Addy has longer maximum streak than Om;
+DRAW, if both have equal maximum streak.
+*/
+import java.util.*;
+public class Codechef_Streak {
+  public static void main(String args[]){
+    Scanner sc = new Scanner(System.in);
+    int t = sc.nextInt();
+	while(t-->0){
+	  int N = sc.nextInt();
+	  int count1 = 0;
+	  int count2 = 0;
+	  int omMax = 0;
+	  int addyMax = 0;
+	  int A[] = new int[N];
+	  for(int i=0; i<N; i++){
+	    A[i] = sc.nextInt();  
+	      if(A[i] != 0){
+	        count1++; 
+	      } else {
+	        count1 = 0;  
+	      }
+	      if(count1>omMax){
+		    omMax=count1;
+		  }
+	  }
+	  int B[] = new int[N];
+	  for(int i=0; i<N; i++){
+	    B[i] = sc.nextInt();  
+	     if(B[i] != 0){
+	       count2++; 
+	     } else {
+	       count2 = 0;  
+	     }
+	     if(count2>addyMax){
+	       addyMax=count2;  
+	     }
+	  }
+	  if(omMax > addyMax){
+	    System.out.println("Om");   
+	  } else if(omMax == addyMax){
+	    System.out.println("Draw");  
+	  } else {
+	    System.out.println("Addy");  
+	  }
+	}  
+  }
+}
