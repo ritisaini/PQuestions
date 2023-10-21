@@ -1,0 +1,14 @@
+import java.util.*;
+public class DonationDrive {
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        while(t-->0){
+        int N = sc.nextInt();
+        int X = sc.nextInt();
+	    int A = N-X;
+	      System.out.println(A);
+    }	
+	} 
+}
+
