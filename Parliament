@@ -1,0 +1,17 @@
+import java.util.*;
+public class Parliament {
+    public static void main(String args[]){
+       Scanner sc = new Scanner(System.in);
+       int t = sc.nextInt();
+       while(t-->0){
+        float N = sc.nextInt();
+        float X = sc.nextInt();
+        N = N/2;
+          if(X >= N){
+            System.out.println("YES");
+          } else {
+            System.out.println("NO");
+          }
+       } 
+    }
+}
