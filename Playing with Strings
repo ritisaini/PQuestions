@@ -1,0 +1,41 @@
+// Two Binary Strings are S,R with length N
+// print a single line containing the string "YES" if it is possible to change 
+// S to R or "NO" if it is impossible (without quotes).
+// Input
+// t = 2
+// N = 5        OUTPUT = YES
+// S = 11000
+// R = 01001
+// N = 3
+// S = 110      OUTPUT = NO
+// R = 001
+import java.util.*;
+public class Playing_with_Strings {
+    public static void main(String args[]){
+       Scanner sc = new Scanner(System.in);
+       int t = sc.nextInt();
+       while(t-->0){
+        int N = sc.nextInt();
+        String S = sc.next();
+        String R = sc.next();
+        int S0=0,S1=0,R0=0,R1=0;
+        for(int i=0; i<N; i++){
+          if(S.charAt(i) == '0'){
+              S0++;
+          } else {
+              S1++;
+          }
+          if(R.charAt(i) == '0'){
+            R0++;
+          } else {
+            R1++;
+          }
+        }
+        if(S0 == R0 && S1 == R1){
+           System.out.println("YES"); 
+        } else {
+           System.out.println("NO");
+        }
+       }  
+    }
+}
