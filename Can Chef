@@ -1,0 +1,18 @@
+import java.util.*;
+public class CanChef {
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        while(t-->0){
+          int X = sc.nextInt();
+          int Y = sc.nextInt();
+          int a = 15*X;
+          int b = 2*Y;
+          if(a >= b){
+            System.out.println("YES");    
+          } else {
+            System.out.println("NO");    
+          }
+        }
+    }
+}
