@@ -1,0 +1,15 @@
+import java.util.*;
+public class TheGift {
+   public static void main(String args[]){ 
+    Scanner sc = new Scanner(System.in);
+    int X = sc.nextInt();
+    int N = sc.nextInt();
+    int M = sc.nextInt();
+    int A = X+M;
+    if(N <= A){
+      System.out.println("YES");        
+    } else {
+      System.out.println("NO");    
+    }
+}
+}
