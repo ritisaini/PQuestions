@@ -1,0 +1,18 @@
+import java.util.*;
+public class Airlines {
+   public static void main(String args[]) {  
+    Scanner sc = new Scanner(System.in);
+    int t = sc.nextInt();
+    while(t-->0){
+      int X = sc.nextInt();
+      int Y = sc.nextInt();
+      int Z = sc.nextInt();
+      int T = 10*X;
+      if(T >= Y){
+        System.out.println(Y*Z);  
+      } else {
+        System.out.println(T*Z);  
+      }
+    }
+  }
+}
